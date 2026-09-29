@@ -8,7 +8,7 @@ Which French territories are the most exposed to natural disasters, how much do 
 ## Data
 - **GASPAR** (data.gouv.fr / Géorisques): natural-disaster (CatNat) decrees by municipality — 8 tables
 - **SWI Météo-France**: soil wetness index, ~50 years of history
-- Public cost data on natural-disaster claims
+- Costs of natural-disaster claims, as used in the project dashboard
 
 ## What I did
 - **Data pipeline**: ingestion, cleaning and structuring of the GASPAR tables and SWI data in **Google BigQuery** (SQL)
