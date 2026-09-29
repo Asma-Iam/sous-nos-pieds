@@ -1,3 +1,13 @@
+
+## Repository structure
+```
+sql/
+  03_marts/marts_eu_views.sql              # financial marts: CatNat counts by hazard joined to claim costs
+  04_dashboard/risques_naturels_views.sql  # serving views for the Looker Studio maps (by hazard, metropole / DROM, clay hazard)
+sous-nos-pieds-final.mp4                   # video walkthrough of the dashboard
+```
+
+Data layers in BigQuery: `data_gouv` (raw) → `staging` (cleaned GASPAR & SWI tables + data-quality views) → `intermediate` (joins GASPAR × SWI, geolocation) → `marts_eu` / `risques_naturels` (analytics & dashboard tables, ML predictions and cost projections).
 # Sous Nos Pieds — Mapping and predicting the cost of natural disasters in France
 
 > Le Wagon Data Analytics capstone project (2026) · topic proposed by Asma Ammouri and selected by the cohort
